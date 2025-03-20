@@ -1,0 +1,56 @@
+netcdf Temperature {
+dimensions:
+	time = 30 ;
+	depth = 16 ;
+	latitude = 12 ;
+	longitude = 20 ;
+variables:
+	double time(time) ;
+		string time:standard_name = "time";
+		string time:long_name = "Time";
+		string time:units = "seconds since 1970-01-01 00:00:00";
+		string time:calendar = "gregorian";
+		string time:axis = "T";
+	float depth(depth) ;
+		string depth:standard_name = "depth";
+		string depth:long_name = "Depth";
+		string depth:units = "m";
+		string depth:unit_long = "Meters";
+		string depth:axis = "Z";
+		string depth:positive = "down";
+	float latitude(latitude) ;
+		string latitude:standard_name = "latitude";
+		string latitude:long_name = "Latitude";
+		string latitude:units = "degrees_north";
+		string latitude:unit_long = "Degrees North";
+		string latitude:axis = "Y";
+	float longitude(longitude) ;
+		string longitude:standard_name = "longitude";
+		string longitude:long_name = "Longitude";
+		string longitude:units = "degrees_east";
+		string longitude:unit_long = "Degrees East";
+		string longitude:axis = "X";
+	float thetao(time, depth, latitude, longitude) ;
+		string thetao:units = "degrees_C";
+		thetao:_FillValue = nanf ;
+		string thetao:standard_name = "sea_water_potential_temperature";
+		string thetao:long_name = "Temperature";
+		string thetao:cell_methods = "area: mean";
+		string thetao:unit_long = "Degrees Celsius";
+		thetao:valid_max = 40.f ;
+		thetao:valid_min = -10.f ;
+
+// global attributes:
+		string :Conventions = "CF-1.11";
+		string :title = "daily mean fields from Global Ocean Physics Analysis and Forecast updated Daily";
+		string :institution = "Mercator Ocean International";
+		string :producer = "CMEMS - Global Monitoring and Forecasting Centre";
+		string :source = "MOI GLO12";
+		string :credit = "E.U. Copernicus Marine Service Information (CMEMS)";
+		string :contact = "https://marine.copernicus.eu/contact";
+		string :references = "http://marine.copernicus.eu";
+		string :subset:source = "ARCO data downloaded from the Marine Data Store using the MyOcean Data Portal";
+		string :subset:productId = "GLOBAL_ANALYSISFORECAST_PHY_001_024";
+		string :subset:datasetId = "cmems_mod_glo_phy-thetao_anfc_0.083deg_P1D-m_202406";
+		string :subset:date = "2025-03-20T15:23:48.498Z";
+}

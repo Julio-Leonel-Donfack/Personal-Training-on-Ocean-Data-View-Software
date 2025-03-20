@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<View collection="Temperature_November_2023" xview="0.23">
+<NetcdfEmulation primaryVarID="0">
+<Dimension varID="0" isLeadDim="1" index="0"/>
+<Dimension varID="1" endIDX="0" length="1" index="1"/>
+<Dimension varID="2" index="2"/>
+<Dimension varID="3" index="3"/>
+<MetaVariable trgVID="3" index="3" colID="3"/>
+<MetaVariable trgVID="4" index="4" colID="2"/>
+<MetaVariables>
+<digits_counts>0,0,0,3,3,0,0,0,0,0,0</digits_counts>
+</MetaVariables>
+<Variables>
+<digits_counts>4,2,2,2,2</digits_counts>
+</Variables>
+</NetcdfEmulation>
+<GeographicMap>
+<MapDomain lat_max="-2.00830" lon_min="129.54790" lat_min="-3.07500" lon_max="131.36880"/>
+<AutoMapLayerSettings land_topography="T" coastline_fill="F"/>
+</GeographicMap>
+<MapWindow>
+<Symbol type="0" color="1" size="-0.1" small_size="0.279244"/>
+<Window>
+<Axis cb_align="1"/>
+<Geometry x_length_bb="7" y_top="-2.0083" x_projection="100" x_right="131.369" y_projection="100" x_offset_bb="1" y_bottom="-3.075" y_offset_bb="7" y_length_bb="7" x_left="129.548"/>
+</Window>
+</MapWindow>
+<DataWindow>
+<AxisVariables>
+<!--Longitude-->
+<xAxis is_reversed="F" var_list="2" var_id="0"/>
+<!--Latitude-->
+<yAxis is_reversed="F" var_list="2" var_id="1"/>
+<!--thetao @ time=first-->
+<zAxis is_reversed="F" var_list="2" var_id="4"/>
+</AxisVariables>
+<Modes plot_mode="2" window_type="0" window_mode="3"/>
+<Contours draw="T">
+<Contour font_size="7" z_value="29.4"/>
+<Contour font_size="7" z_value="29.5"/>
+<Contour font_size="7" z_value="29.6"/>
+<Contour font_size="7" z_value="29.7"/>
+<Contour font_size="7" z_value="29.8"/>
+<Contour font_size="7" z_value="29.9"/>
+<Contour font_size="7" z_value="30"/>
+<Contour font_size="7" z_value="30.1"/>
+<Contour font_size="7" z_value="30.2"/>
+<Contour font_size="7" z_value="30.3"/>
+<Contour font_size="7" z_value="30.4"/>
+</Contours>
+<Gridding x_scale_length="2.72622" draw_shaded="T" auto_scale_lengths="T" y_scale_length="4.86858"/>
+<BadEstimateHiding max_distance="3" hide="F"/>
+<Window>
+<Geometry x_length_bb="15.5" y_top="-2.0083" x_projection="100" x_right="131.369" y_projection="100" x_offset_bb="11" y_bottom="-3.075" y_offset_bb="2" y_length_bb="17" x_left="129.548"/>
+<ColorScale z_range_end="30.4" z_range_start="29.4"/>
+<GraphicsObjects>
+<GObject type="1" dragging="F" is_automatic="T" own_coordinates="F" clipping="F" post_data="T">
+<Annotation background_color="-1" x_coordinate="26.5" frame_width="-1" y_coordinate="15.2445" font_size="12.9895" text_color="0" frame_type="0" text_alignment="4" text="thetao @ time=first" angle="0" frame_color="-1"/>
+</GObject>
+</GraphicsObjects>
+</Window>
+</DataWindow>
+<IsoSurfaceVariables>
+<!--thetao @ time=first-->
+<IsoVariable surface_var_id="0" surface_value="first" var_id="4"/>
+</IsoSurfaceVariables>
+</View>
