@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<View collection="Zeus" xview="0.23">
+<NetcdfEmulation primaryVarID="0">
+<Dimension isLeadDim="1" index="0" varID="0"/>
+<Dimension endIDX="0" index="1" varID="1" length="1"/>
+<Dimension index="2" varID="2"/>
+<Dimension index="3" varID="3"/>
+<MetaVariable trgVID="3" index="3" colID="3"/>
+<MetaVariable trgVID="4" index="4" colID="2"/>
+<MetaVariables>
+<digits_counts>0,0,0,3,3,0,0,0,0,0,0</digits_counts>
+</MetaVariables>
+<Variables>
+<digits_counts>4,2,2,2,2,2</digits_counts>
+</Variables>
+</NetcdfEmulation>
+<GeographicMap>
+<MapDomain lon_max="131.36880" lat_max="-1.94580" lon_min="129.54790" lat_min="-4.05420"/>
+<AutoMapLayerSettings land_topography="T" coastline_fill="F"/>
+</GeographicMap>
+<MapWindow>
+<Symbol color="1" type="0" small_size="0.258314" size="-0.1"/>
+<Window>
+<Axis cb_align="1"/>
+<Geometry x_length_bb="7" x_projection="100" y_offset_bb="7" y_projection="100" x_offset_bb="1" y_length_bb="7" x_left="129.548" y_bottom="-4.0542" y_top="-1.9458" x_right="131.369"/>
+</Window>
+</MapWindow>
+<DataWindow>
+<AxisVariables>
+<!--Longitude-->
+<xAxis is_reversed="F" var_id="0" var_list="2"/>
+<!--Latitude-->
+<yAxis is_reversed="F" var_id="1" var_list="2"/>
+<!--vo @ time=first-->
+<zAxis is_reversed="F" var_id="5" var_list="2"/>
+</AxisVariables>
+<Modes window_mode="3" plot_mode="6" window_type="0"/>
+<Arrows arrow_color="1" line_style="0" x_var_id="4" scale="1" line_width="1" y_var_id="5"/>
+<Window>
+<Geometry x_length_bb="15.5" x_projection="100" y_offset_bb="2" y_projection="100" x_offset_bb="11" y_length_bb="17" x_left="129.548" y_bottom="-4.0542" y_top="-1.9458" x_right="131.369"/>
+<ColorScale z_range_start="-0.3" z_range_end="0.35"/>
+<UnitArrow arrow_color="0" y_coordinate="2.1" background_color="31" clipping="F" arrow_length="1" text_color="0" frame_color="0" own_coordinates="F" dragging="T" post_data="T" text="1 " font_size="11.9653" frame_width="0" x_coordinate="11.5191"/>
+<GraphicsObjects>
+<GObject clipping="F" own_coordinates="F" dragging="F" post_data="T" type="1" is_automatic="T">
+<Annotation frame_type="0" y_coordinate="19.2" background_color="-1" text_color="0" frame_color="-1" font_size="15.4147" angle="0" text_alignment="4" frame_width="-1" text="vo @ time=first" x_coordinate="26.0809"/>
+</GObject>
+</GraphicsObjects>
+</Window>
+</DataWindow>
+<IsoSurfaceVariables>
+<!--uo @ time=first-->
+<IsoVariable surface_value="first" surface_var_id="0" var_id="4"/>
+<!--vo @ time=first-->
+<IsoVariable surface_value="first" surface_var_id="0" var_id="5"/>
+</IsoSurfaceVariables>
+</View>
