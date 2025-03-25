@@ -15,7 +15,7 @@ This personal training focuses on the use of **Ocean Data View (ODV)** software 
 
 ## Technologies Used:
 - **Ocean Data View (ODV)** for data visualization and analysis. [Download ODV here](https://odv.awi.de/)
-- ** GOODS GNOME Online Oceanographic Data Server **  [Download GOODS here](https://gnome.orr.noaa.gov/goods/tools/GSHHS/coast_subset)
+- **GOODS GNOME Online Oceanographic Data Server**  [Download GOODS here](https://gnome.orr.noaa.gov/goods/tools/GSHHS/coast_subset)
 - **Copernicus Marine Service** for access to oceanographic data.
 
 ## Data Sources:
